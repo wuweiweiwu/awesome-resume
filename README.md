@@ -6,4 +6,4 @@ $ npm start
 ```
 
 ## Acknowledgements
-This project was forked from my good buddy, [rsnara](https://github.com/rsnara)'s [resume-react](https://github.com/rsnara/resume-react) project, so a special thanks to him!
+This project was forked from [clemmy](https://github.com/clemmy)
