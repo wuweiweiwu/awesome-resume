@@ -1,7 +1,7 @@
 {
-  "name": "3a-resume",
+  "name": "awesome-resume",
   "version": "0.1.0",
-  "description": "A resume written using react!",
+  "description": "An over-engineered resume written using react!",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ramanpreetnara/resume-react.git"
+    "url": "https://github.com/wuweiweiwu/awesome-resume.git"
   },
   "license": "CC0-1.0",
-  "author": "Clement Hoang <clement.hoang24@gmail.com> (http://github.com/clemmy)",
-  "homepage": "https://github.com/clemmy/3a-resume",
+  "author": "Wei-Wei Wu <wuxx1045@umn.edu>",
+  "homepage": "https://github.com/wuweiweiwu/awesome-resume",
   "devDependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
