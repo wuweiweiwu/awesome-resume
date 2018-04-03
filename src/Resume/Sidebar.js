@@ -9,17 +9,15 @@ const Sidebar = ({ data }) => (
   <section style={style.main}>
     <div>
       <ContactLinks data={data.links} />
-      <Languages data={data.languages} />
-      <SidebarList title="+ FRAMEWORKS" items={data.libraries} />
-      <SidebarList title="+ DATABASES" items={data.databases} />
-      <SidebarList title="+ TOOLS" items={data.tools} />
-      <SidebarList title="+ INTERESTS" items={data.interests} separator={'<br/>'} />
-    </div>
-    <div>
       <Education
         university={data.education.university}
         degree={data.education.degree}
         duration={data.education.duration} />
+      {/* <Languages data={data.languages} />
+      <SidebarList title="+ FRAMEWORKS" items={data.libraries} />
+      <SidebarList title="+ DATABASES" items={data.databases} />
+      <SidebarList title="+ TOOLS" items={data.tools} />
+      <SidebarList title="+ INTERESTS" items={data.interests} separator={'<br/>'} /> */}
     </div>
   </section>
 );
