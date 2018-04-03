@@ -23,9 +23,9 @@ class Resume extends Component {
 const DATA = {
   sidebar: {
     education: {
-      university: 'University of Waterloo',
-      duration: 'Sept 2013 - now',
-      degree: 'Bachelor of Software Engineering',
+      university: 'University of Minnesota',
+      duration: 'Aug 2014 - Dec 2017',
+      degree: 'B.S. Computer Science',
     },
     languages: [
       {
@@ -95,20 +95,15 @@ const DATA = {
       {
         name: 'Email',
         faClass: 'fa fa-envelope',
-        display: 'c8hoang@uwaterloo.ca',
-        link: 'mailto:c8hoang@uwaterloo.ca',
+        display: 'hello@weiweiwu.me',
+        link: 'mailto:hello@weiweiwu.me',
       },
-      {
-        name: 'GitHub',
-        faClass: 'fa fa-github',
-        display: 'github.com/clemmy',
-        link: 'https://github.com/clemmy',
-      },
+
       {
         name: 'Twitter',
         faClass: 'fa fa-twitter',
-        display: 'twitter.com/c8hoang',
-        link: 'https://twitter.com/c8hoang',
+        display: 'twitter.com/wuweiweiwu',
+        link: 'https://twitter.com/wuweiweiwu',
       },
     ],
   },
@@ -116,33 +111,39 @@ const DATA = {
     {
       name: 'Website',
       faClass: 'fa fa-fire',
-      display: 'http://clemmy.ninja',
-      link: 'http://clemmy.ninja',
+      display: 'https://weiweiwu.me',
+      link: 'https://weiweiwu.me',
     },
+    // {
+    //   name: 'Blog',
+    //   faClass: 'fa fa-book',
+    //   display: 'blog.clementhoang.net',
+    //   link: 'http://blog.clementhoang.net',
+    // },
     {
-      name: 'Blog',
-      faClass: 'fa fa-book',
-      display: 'blog.clementhoang.net',
-      link: 'http://blog.clementhoang.net',
+      name: 'GitHub',
+      faClass: 'fa fa-github',
+      display: 'github.com/wuweiweiwu',
+      link: 'https://github.com/wuweiweiwu',
     },
     {
       name: 'Linkedin',
       faClass: 'fa fa-linkedin',
-      display: 'linkedin.com/in/clementhoang',
-      link: 'https://www.linkedin.com/in/clementhoang',
+      display: 'linkedin.com/in/hungweiwu',
+      link: 'https://www.linkedin.com/in/hungweiwu',
     },
   ],
   main: {
-    firstName: 'Clement',
-    lastName: 'Hoang',
+    firstName: 'Hung-Wei',
+    lastName: 'Wu',
     program: {
       term: '',
       nickname: 'Software Engineer',
       name: 'Software Engineer',
     },
     website: {
-      name: 'http://clemmy.ninja',
-      link: 'http://clemmy.ninja',
+      name: 'https://weiweiwu.me',
+      link: 'https://weiweiwu.me',
     },
     companies: [
       {
