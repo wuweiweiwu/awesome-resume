@@ -8,6 +8,7 @@ $ yarn start
 ## Todo list
 
 - [ ] update info
+- [ ] use some sort of TOML file for organizing info
 - [ ] redo sidebar
 - [ ] theming
 - [ ] cli?
