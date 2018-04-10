@@ -1,35 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-  color: rgba(78, 78, 78 , 1);
-  font-weight: 300;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0.25rem 0;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-}
-
-h3 {
-  font-size: 1.0rem;
-}
-
-b {
-  color: rgba(21, 44, 85, 1);
-}
-
-a {
-  color: rgba(21, 44, 85, 1);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
