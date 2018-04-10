@@ -28,13 +28,14 @@ const style = {
 		flex: '1 1 auto',
 		fontSize: '1.6rem',
 		// background: 'rgba(118, 136, 169, 0.125)',
-		marginBottom: '-0.4em',
-		height: '9rem'
+		marginBottom: '-5em',
+		height: '6rem'
 	},
 	h1: {
 		color: 'rgb(21, 44, 85)',
 		display: 'block',
-		fontSize: '3.4rem'
+		fontSize: '3.4rem',
+		margin: '0px'
 	},
 	program: {
 		fontSize: '1.2rem',
