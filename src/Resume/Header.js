@@ -25,10 +25,7 @@ const Header = ({ firstName, lastName, program, website }) => {
 const style = {
 	main: {
 		padding: '16px 0 1px 0',
-		flex: '1 1 auto',
 		fontSize: '1.6rem',
-		// background: 'rgba(118, 136, 169, 0.125)',
-		marginBottom: '-5em',
 		height: '6rem'
 	},
 	h1: {
