@@ -77,7 +77,7 @@ const DATA = {
 			'I <b>contribute</b> to open source projects',
 			'I <b>dominate</b> in bouldering, running, and Overwatch',
 			'I <b>love</b> yogurt, gravy, traveling, and learning',
-			'I <b>hate</b> when my earphones gets caught on the doorknow'
+			'I <b>hate</b> when my earphones gets caught on the doorknob'
 		],
 		links: [
 			{
