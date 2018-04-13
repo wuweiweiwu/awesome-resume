@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 const Language = ({ name }) => (
 	<div style={style.main}>
 		<div />
-		<div>{name}</div>
+		<div>
+			{name}
+			{/* {proficiency} */}
+		</div>
 	</div>
 );
 
@@ -16,8 +19,8 @@ const style = {
 };
 
 Language.propTypes = {
-	name: PropTypes.string.isRequired,
-	proficiency: PropTypes.number.isRequired
+	name: PropTypes.string.isRequired
+	// proficiency: PropTypes.string.isRequired
 };
 
 export default Language;
