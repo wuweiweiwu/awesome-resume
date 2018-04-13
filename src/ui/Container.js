@@ -1,5 +1,4 @@
 import React from 'react';
-// import radium from 'radium';
 import PropTypes from 'prop-types';
 
 const Container = ({ children }) => <div style={style}>{children}</div>;
@@ -17,9 +16,8 @@ const style = {
 	margin: '0 auto',
 	fontFamily: "'Open Sans', sans-serif",
 	display: 'flex',
-	flexDirection: 'row',
-	flexWrap: 'wrap'
+	justifyContent: 'flex-start',
+	flexFlow: 'column'
 };
 
-// export default radium(Container);
 export default Container;
