@@ -25,71 +25,59 @@ const DATA = {
 		education: {
 			university: 'University of Minnesota',
 			duration: 'Aug 2014 - Dec 2017',
-			degree: 'B.S. Computer Science'
+			degree: 'B.S. Computer Science, Cum Laude'
 		},
 		languages: [
 			{
-				name: 'JavaScript/Node.js (ES2015)',
-				proficiency: 0.8
+				name: 'JavaScript'
+				// proficiency: 0.8
 			},
 			{
-				name: 'Python',
-				proficiency: 0.7
+				name: 'Python'
+				// proficiency: 0.7
 			},
 			{
-				name: 'HTML/CSS',
-				proficiency: 0.4
+				name: 'HTML/CSS'
+				// proficiency: 0.4
 			},
 			{
-				name: 'Scala',
-				proficiency: 0.6
+				name: 'Rust'
+				// proficiency: 0.6
 			},
 			{
-				name: 'C++',
-				proficiency: 0.6
-			},
-			{
-				name: 'BASH',
-				proficiency: 0.5
+				name: 'Bash'
+				// proficiency: 0.5
 			}
 		],
-		databases: ['MongoDB', 'Redshift/PostgreSQL', 'MySQL'],
+		databases: ['MongoDB', 'DynamoDB', 'MySQL'],
 		libraries: [
 			'React',
-			'React Native',
+			'AngularJS',
+			'Flow',
 			'Redux',
 			'MobX',
+			'Cerebral',
 			'Express',
-			'Socket.io',
 			'Koa',
-			'Scrapy',
-			'Gensim',
-			'Scikit-Learn',
-			'NLTK',
-			'Django',
-			'Angular',
-			'Mocha',
 			'jQuery',
 			'Sass/Less'
 		],
 		tools: [
-			'AWS (Redshift, S3, Lambda, Kinesis, EMR, EC2, SES, SNS)',
-			'Firebase',
-			'Spark/Spark Streaming',
-			'Airflow',
-			'Jupyter',
-			'Zeppelin',
-			'Unix',
+			'AWS (S3, Lambda, EC2)',
 			'Git',
+			'Bower',
+			'npm',
 			'Webpack',
-			'Gulp/Grunt',
+			'Babel',
+			'Gulp',
+			'Grunt',
 			'Docker'
 		],
 		interests: [
-			'I <b>learn</b> about web and startups.',
-			'I <b>dominate</b> in baddy, ping pong, League of Legends, and Tetris.',
-			'I <b>love</b> tacos, anime, bubble tea, fitness, traveling, and team players.',
-			'I <b>hate</b> doing planks.'
+			'I <b>contribute</b> to open source projects',
+			'I <b>dominate</b> in bouldering, running, and Overwatch',
+			'I <b>love</b> yogurt, gravy, traveling, and learning',
+			'I <b>hate</b> when my earphones gets caught on the doorknow'
 		],
 		links: [
 			{
@@ -147,72 +135,86 @@ const DATA = {
 		},
 		companies: [
 			{
-				name: 'Facebook',
-				title: 'React Core Developer',
-				color: 'rgb(77, 100, 141)',
-				date: 'Fall 2017',
-				location: 'Menlo Park, US',
-				achievements: [
-					'Championed the release of <b><a href="https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html">React Fragments</a></b> with React v16.2',
-					'Prepared ecosystem for JSX fragments by submitting pull requests to open source libraries such as <b>Babel/Babylon</b> and reaching out to maintainers of popular Javascript libraries for collaboration',
-					'Made proposals and prototypes for various forms of <b><a href="https://codepen.io/clemmy/pen/dZxObQ">JSX generator expressions</a></b>'
-				]
-			},
-			{
-				name: 'Memebox',
-				title: 'Data Engineer',
+				name: 'Lilitofu',
+				title: 'Frontend Web Developer Intern',
 				color: 'rgb(77, 100, 141)',
 				date: 'Winter 2017',
-				location: 'Seoul, Korea',
+				location: 'San Francisco, CA',
 				achievements: [
-					'Maintained stable data pipelines built with <b>Spark</b> and <b>Spark Streaming</b>, with <b>Airflow</b> for scheduling (50+ GB data flow daily)',
-					'Built <b>real time</b> data visualization and alerting tools',
-					'Wrote data extraction tool for external sites using <b>Scrapy</b> that automatically refreshes for stale data periodically',
-					'Extracted keywords from Korean text for tagging products'
+					'Tasked with revamping the user story page to decrease UI friction',
+					'Realized concepts designed in <a href="https://zeplin.io/">zeplin.io</a> using <b>React</b>, <b>Redux</b>, and <b>Sass</b>',
+					'Ported state managment in legacy components to <b>Redux</b>'
 				]
 			},
 			{
-				name: 'Zenreach',
-				title: 'Web Developer',
+				name: 'Amazon',
+				title: 'Software Engineer Intern',
 				color: 'rgb(77, 100, 141)',
-				date: 'Spring 2016',
-				location: 'San Francisco, US',
+				date: 'Summer 2017',
+				location: 'Irvine, CA',
 				achievements: [
-					'Contributed major updates to <b><a href="https://github.com/zenoamaro/react-quill">react-quill</a></b> project with 1.3k stars on Github',
-					'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
-					'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics'
+					'Decreased operational burden on the Amazon Digital Goods Discovery team by creating a web app that client teams could use for service on-boarding',
+					'Full stack development using <b>React</b>, <b>Express</b>, <b>Typescript</b>, <b>webpack</b>, <b>AWS SDK</b>, <b>S3</b>, <b>DynamoDB</b>, and <b>gulp</b>',
+					'All code was reviewed, perfected, and pushed to production'
 				]
 			},
 			{
-				name: 'Datera',
+				name: 'UnitedHealth Group',
+				title: 'Software Engineer Intern',
 				color: 'rgb(77, 100, 141)',
-				title: 'Full Stack JavaScript Engineer',
+				date: 'Summer 2016',
+				location: 'Minneapolis, MN',
+				achievements: [
+					'Wrote datalate ingestion tests in <b>Bash</b> that verified patient data in <b>HBase</b> and <b>Hive</b> tables',
+					'Currently have 21 test cases incorporated into testing protocol',
+					'Cut testing time by <b>80%</b> by automating tests that were previously done manually.'
+				]
+			},
+			{
+				name: 'Distributed Systems Lab',
+				color: 'rgb(77, 100, 141)',
+				title: 'Student Researcher',
 				date: 'Fall 2015',
-				location: 'Mountain View, US',
+				location: 'Minneapolis, MN',
 				achievements: [
-					'Built interactive API explorer using the JSONSchema standard with <b>AngularJS</b>',
-					'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
-					'Designed and built admin panel for a distributed storage system'
+					'Worked on <b>Beehive</b> – A Parallel Programming System for Graph Problems',
+					'Experimented with <b>Java Externalization</b>, <b>Java Serialization</b>, <b>Gson</b>, <b>Jackson</b>, <b>Boon</b> as ways to effectively serialize graph data',
+					'Implementations with <b>gRPC</b>, <b>Apache Thrift</b>, and <b>Apache Avro</b> to decrease network communication cost bottlenecks',
+					'NSF Award 1319333'
 				]
 			}
 		],
 		projects: [
 			{
-				name: 'Zoo House',
+				name: (
+					<a href="https://github.com/wuweiweiwu/qwop-thesis/blob/master/thesis.pdf">
+						Deep QWOP Learning (Honor Thesis)
+					</a>
+				),
 				tools: [],
 				achievements: [
-					'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
-					'Worked with a small team to build and maintain <b><a href="https://luql.io/">Luql</a></b>, a platform for local tour guides'
+					'Explored using <b>Deep Q Learning</b> to play the popular and frustrating flash game <b>QWOP</b>',
+					'Used <b>OpenCV</b>, and <b>Keras</b> to implement an agent that was incentivized to travel as far as possible',
+					'Agent <b>"successfully"</b> to use the scooting strategy to travel 100m',
+					'Under the supervision of <b><a href="https://en.wikipedia.org/wiki/Maria_L._Gini">Maria Gini</a></b> and <b>James Parker</b>'
 				]
 			},
 			{
-				name: 'Various Hacks',
+				name: 'Open Source Projects that I Maintain',
 				tools: [],
 				achievements: [
-					'<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
-					'<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
-					'<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
-					'<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)'
+					'<b><a href="https://github.com/bvaughn/react-virtualized">react-virtualized</a></b> - React components for efficiently rendering large lists and tabular data - <b>10k stars</b>',
+					'<b><a href="https://github.com/fritz-c/react-sortable-tree">react-sortable-tree</a></b> - Drag-and-drop sortable component for nested data and hierarchies - <b>1.7k stars</b>',
+					'<b><a href="https://github.com/fritz-c/react-image-lightbox">react-image-lightbox</a></b> - React lightbox component - <b>377 stars</b>'
+				]
+			},
+			{
+				name: 'Some Open Source Contributions',
+				tools: [],
+				achievements: [
+					'<b><a href="https://github.com/storybooks/storybook">storybook</a></b> - <b>background</b> and <b>a11y</b> addons',
+					'<b><a href="https://github.com/CompuIves/codesandbox-client">codesandbox.io</a></b> - implemented static file upload and management',
+					'<b><a href="https://github.com/nodejs/node">Node.js</a></b> - implemented <b>ECDH.convertKey</b> to convert between different key formats. Released in <b>v9.9.0</b>'
 				]
 			}
 		]
