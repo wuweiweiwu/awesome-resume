@@ -18,9 +18,9 @@ yarn deploy
 ## Todo list
 
 * [x] use create-react-app
-* [ ] update info
+* [x] update info
 * [ ] use some sort of TOML file for organizing info
-* [ ] redo sidebar
+* [ ] ~~redo sidebar~~
 * [ ] theming
 * [ ] cli?
 
