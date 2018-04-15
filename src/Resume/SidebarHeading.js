@@ -1,26 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const SidebarHeading = ({ children, align = 'left' }) => (
-	<h1
-		style={{
-			...style,
-			textAlign: align
-		}}
-	>
-		{children}
-	</h1>
-);
+const Header = styled.h1`
+	padding: 0.25rem 0;
+	border-bottom: 1px solid #152c55;
+	margin-bottom: 0.6rem;
+	text-align: left;
+`;
 
-const style = {
-	paddingTop: '0.25rem',
-	paddingBottom: '0.25rem',
-	borderBottom: '1px solid rgb(21, 44, 85)',
-	marginBottom: '0.6rem'
-};
+const SidebarHeading = ({ children }) => <Header>{children}</Header>;
 
 SidebarHeading.propTypes = {
-	align: PropTypes.string,
 	children: PropTypes.node
 };
 

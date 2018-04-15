@@ -1,11 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import SidebarHeading from './SidebarHeading';
 import PropTypes from 'prop-types';
 
 const SidebarList = ({ items, title, separator }) => (
-	<section style={style.main}>
+	<section>
 		<SidebarHeading> {title} </SidebarHeading>
-		<div style={style.list}>
+		<div>
 			{items.map((item, key) => (
 				<span
 					key={key}
@@ -25,17 +26,6 @@ function createSeparator(index, array, separator = ', ') {
 
 	return '';
 }
-
-const style = {
-	main: {
-		margin: '0.4rem 0'
-	},
-	list: {
-		breakWord: 'normal',
-		textAlign: 'left'
-		// textJustify: 'inter-word',
-	}
-};
 
 SidebarList.propTypes = {
 	items: PropTypes.arrayOf(PropTypes.string).isRequired
