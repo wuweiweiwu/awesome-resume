@@ -9,7 +9,7 @@ yarn start
 
 Deploy to Github Page:
 
-Modify the `"homepage"` attribute in `package.json` to the appropriate path.
+Modify the `"homepage"` attribute in `package.json` to the appropriate url.
 
 ```
 yarn deploy
@@ -19,10 +19,10 @@ yarn deploy
 
 * [x] use create-react-app
 * [x] update info
+* [ ] **rewrite components cuz its a miss rn**
 * [ ] use some sort of TOML file for organizing info
 * [ ] ~~redo sidebar~~
 * [ ] theming
-* [ ] cli?
 
 ## Acknowledgements
 
