@@ -35,4 +35,5 @@ Advanced:
 
 ## Acknowledgements
 
-This project was forked from [clemmy](https://github.com/clemmy)
+This project was forked from [clemmy](https://github.com/clemmy).
+He wrote all the base components. I rewrote them using `styled-components` as well as bootstrapped with `create-react-app` and refactored a lot of the components. Also added `gh-pages` deployments
