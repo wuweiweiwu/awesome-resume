@@ -7,6 +7,7 @@ const Header = styled.h1`
 	border-bottom: 1px solid #152c55;
 	margin-bottom: 0.6rem;
 	text-align: left;
+	font-weight: 300;
 `;
 
 const SidebarHeading = ({ children }) => <Header>{children}</Header>;

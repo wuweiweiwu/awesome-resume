@@ -24,7 +24,9 @@ const Icon = styled.i`
 const ContactLink = ({ display, link, faClass, name }) => (
 	<Wrapper>
 		<Icon className={faClass} />
-		<Link to={link}>{display}</Link>
+		<Link to={link} style={{ paddingTop: '4px' }}>
+			{display}
+		</Link>
 	</Wrapper>
 );
 

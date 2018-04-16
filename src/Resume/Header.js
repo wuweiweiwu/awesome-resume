@@ -14,6 +14,7 @@ const Heading = styled.h1`
 	display: block;
 	font-size: 3.4rem;
 	margin: 0px;
+	font-weight: 300;
 `;
 
 const Program = styled.span`

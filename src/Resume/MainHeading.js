@@ -7,6 +7,7 @@ const Header = styled.h1`
 	color: rgba(21, 44, 85, 1);
 	padding: 0.25rem;
 	border-bottom: 1px solid rgba(21, 44, 85, 1);
+	font-weight: 300;
 `;
 
 const MainHeading = ({ title }) => <Header>{title.toUpperCase()}</Header>;

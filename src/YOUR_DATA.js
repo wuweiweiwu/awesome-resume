@@ -71,6 +71,12 @@ export const DATA = {
 				faClass: 'fa fa-twitter',
 				display: 'twitter.com/wuweiweiwu',
 				link: 'https://twitter.com/wuweiweiwu'
+			},
+			{
+				name: 'LinkedIn',
+				faClass: 'fa fa-linkedin',
+				display: 'linkedin.com/in/hungweiwu',
+				link: 'https://linkedin.com/in/hungweiwu'
 			}
 		]
 	},
