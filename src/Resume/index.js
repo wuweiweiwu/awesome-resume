@@ -3,7 +3,7 @@ import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 class Resume extends Component {
 	render() {

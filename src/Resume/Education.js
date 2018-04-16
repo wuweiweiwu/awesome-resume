@@ -1,31 +1,29 @@
 import React from 'react';
 import SidebarHeading from './SidebarHeading';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+	margin: 0.4rem 0 0 0;
+`;
+
+const University = styled.div`
+	text-align: left;
+	font-weight: bold;
+`;
+
+const Duration = styled.div`
+	text-align: left;
+`;
 
 const Education = ({ university, duration, degree }) => (
-	<section style={style.main}>
+	<Wrapper>
 		<SidebarHeading align="left">+ EDUCATION</SidebarHeading>
-		<div
-			style={{
-				...style.text,
-				fontWeight: 'bold'
-			}}
-		>
-			{university}
-		</div>
+		<University>{university}</University>
 		<div>{degree}</div>
-		<div style={style.text}>{duration}</div>
-	</section>
+		<Duration>{duration}</Duration>
+	</Wrapper>
 );
-
-const style = {
-	main: {
-		margin: '0.4rem 0 0 0'
-	},
-	text: {
-		textAlign: 'left'
-	}
-};
 
 Education.propTypes = {
 	university: PropTypes.string.isRequired,

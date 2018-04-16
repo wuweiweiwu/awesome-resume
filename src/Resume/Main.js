@@ -3,14 +3,17 @@ import Companies from './Companies';
 import MainHeading from './MainHeading';
 import Project from './Project';
 import Section from '../ui/Section';
-import List from '../ui/List';
-import Identity from './Identity';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 // http://paletton.com/#uid=13I0u0kllllaFw0g0qFqFg0w0aF
 
+const Wrapper = styled.section`
+	padding-right: 1.25rem;
+`;
+
 const Main = ({ firstName, lastName, program, companies, projects }) => (
-	<section style={style.main}>
+	<Wrapper>
 		<MainHeading title="+ Work Experience" />
 		<Companies data={companies} />
 		<MainHeading title="+ Projects" />
@@ -25,14 +28,8 @@ const Main = ({ firstName, lastName, program, companies, projects }) => (
 				/>
 			</Section>
 		))}
-	</section>
+	</Wrapper>
 );
-
-const style = {
-	main: {
-		paddingRight: '1.25rem'
-	}
-};
 
 Main.propTypes = {
 	firstName: PropTypes.string.isRequired,

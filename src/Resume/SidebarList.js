@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import SidebarHeading from './SidebarHeading';
 import PropTypes from 'prop-types';
 

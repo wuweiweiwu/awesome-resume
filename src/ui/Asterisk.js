@@ -1,11 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Asterisk = () => <span style={style}>*</span>;
+const Wrapper = styled.span`
+	position: relative;
+	top: -0.25rem;
+	font-size: 20%;
+`;
 
-const style = {
-	position: 'relative',
-	top: '-0.25em',
-	fontSize: '20%'
-};
+const Asterisk = () => <Wrapper>*</Wrapper>;
 
 export default Asterisk;

@@ -1,10 +1,22 @@
 import React from 'react';
 import ContactLink from './ContactLink';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+	margin-bottom: 0.2rem;
+`;
+
+const Heading = styled.h1`
+	text-align: left;
+	border-bottom: 1px solid rgb(21, 44, 85)
+	padding:.25rem;
+	margin-bottom: .6rem;
+`;
 
 const ContactLinks = ({ data: links }) => (
-	<section style={style.main}>
-		<h1 style={style.heading}>+ CONTACT</h1>
+	<Wrapper>
+		<Heading>+ CONTACT</Heading>
 		{links.map((link, key) => (
 			<ContactLink
 				display={link.display}
@@ -14,20 +26,8 @@ const ContactLinks = ({ data: links }) => (
 				name={link.name}
 			/>
 		))}
-	</section>
+	</Wrapper>
 );
-
-const style = {
-	main: {
-		marginBottom: '0.2rem'
-	},
-	heading: {
-		textAlign: 'left',
-		borderBottom: '1px solid rgb(21, 44, 85)',
-		padding: '0.25rem',
-		marginBottom: '0.6rem'
-	}
-};
 
 ContactLinks.propTypes = {
 	data: PropTypes.arrayOf(PropTypes.object).isRequired

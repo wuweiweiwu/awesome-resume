@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Language from './Language';
 import SidebarHeading from '../SidebarHeading';
 
+const Wrapper = styled.section`
+	margin: 0.2rem 0 0.6rem 0;
+`;
+
 const Languages = ({ data: languages }) => (
-	<section style={style.main}>
+	<Wrapper>
 		<SidebarHeading>+ LANGUAGES</SidebarHeading>
 		<div>
 			{languages.map((language, index) => (
@@ -16,14 +21,8 @@ const Languages = ({ data: languages }) => (
 				/>
 			))}
 		</div>
-	</section>
+	</Wrapper>
 );
-
-const style = {
-	main: {
-		margin: '0.2rem 0 0.6rem 0'
-	}
-};
 
 Languages.propTypes = {
 	data: PropTypes.arrayOf(PropTypes.object).isRequired

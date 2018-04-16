@@ -1,32 +1,32 @@
 import React from 'react';
-import Link from '../ui/Link';
-
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const ContactLink = ({ display, link, faClass, name }) => (
-	<div style={style.main}>
-		<i className={faClass} style={style.icon} />
-		<Link to={link}>{display}</Link>
-	</div>
-);
+import Link from '../ui/Link';
 
-const style = {
-	main: {
-		display: 'flex',
-		justifyContent: 'flex-start',
-		margin: '4px'
-	},
-	icon: {
-		display: 'inline-block',
-		fontSize: '1.6rem',
-		lineHeight: '1.6rem',
-		width: '1.6rem',
-		height: '1.6rem',
-		textAlign: 'center',
-		verticalAlign: 'middle',
-		color: 'rgba(77, 100, 141, 1)'
-	}
-};
+const Wrapper = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	margin: 4px;
+`;
+
+const Icon = styled.i`
+	display: inline-block;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	text-align: center;
+	vertical-align: center;
+	color: rgba(77, 100, 141, 1);
+`;
+
+const ContactLink = ({ display, link, faClass, name }) => (
+	<Wrapper>
+		<Icon className={faClass} />
+		<Link to={link}>{display}</Link>
+	</Wrapper>
+);
 
 ContactLink.propTypes = {
 	display: PropTypes.string.isRequired,

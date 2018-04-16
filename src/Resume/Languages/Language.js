@@ -1,22 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+	display: flex;
+	justify-content: flex-start;
+`;
 
 const Language = ({ name }) => (
-	<div style={style.main}>
+	<Wrapper>
 		<div />
 		<div>
 			{name}
 			{/* {proficiency} */}
 		</div>
-	</div>
+	</Wrapper>
 );
-
-const style = {
-	main: {
-		display: 'flex',
-		justifyContent: 'flex-start'
-	}
-};
 
 Language.propTypes = {
 	name: PropTypes.string.isRequired

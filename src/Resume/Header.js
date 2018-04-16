@@ -1,49 +1,51 @@
 import React from 'react';
 import Link from '../ui/Link';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+	padding: 16px 0 1px 0;
+	font-size: 1.6rem;
+	height: 6rem;
+`;
+
+const Heading = styled.h1`
+	color: rgb(21, 44, 85);
+	display: block;
+	font-size: 3.4rem;
+	margin: 0px;
+`;
+
+const Program = styled.span`
+	font-size: 1.2rem;
+	display: block;
+	margin-left: 5px;
+	margin-top: -6px;
+	color: rgb(77, 100, 141);
+`;
+
+const Span = styled.span`
+	display: inline-block;
+`;
 
 const Header = ({ firstName, lastName, program, website }) => {
 	const { nickname, term } = program;
 
 	return (
-		<section style={style.main}>
-			<h1 style={style.h1}>
-				<span style={style.span}>{firstName.toUpperCase()}</span>
-				<span style={style.span}>&nbsp;</span>
-				<span style={style.span}>{lastName.toUpperCase()}</span>
-			</h1>
-			<span style={style.program}>
+		<Wrapper>
+			<Heading>
+				<Span>{firstName.toUpperCase()}</Span>
+				<Span>&nbsp;</Span>
+				<Span>{lastName.toUpperCase()}</Span>
+			</Heading>
+			<Program>
 				{term} {nickname} |{' '}
 				<Link to={website.link} style={{ padding: 0 }}>
 					{website.name}
 				</Link>
-			</span>
-		</section>
+			</Program>
+		</Wrapper>
 	);
-};
-
-const style = {
-	main: {
-		padding: '16px 0 1px 0',
-		fontSize: '1.6rem',
-		height: '6rem'
-	},
-	h1: {
-		color: 'rgb(21, 44, 85)',
-		display: 'block',
-		fontSize: '3.4rem',
-		margin: '0px'
-	},
-	program: {
-		fontSize: '1.2rem',
-		display: 'block',
-		marginLeft: '5px',
-		marginTop: '-6px',
-		color: 'rgb(77, 100, 141)'
-	},
-	span: {
-		display: 'inline-block'
-	}
 };
 
 Header.propTypes = {

@@ -2,12 +2,23 @@ import React from 'react';
 import Languages from './Languages';
 import SidebarList from './SidebarList';
 import ContactLinks from './ContactLinks';
-import HorizontalRule from '../ui/HorizontalRule';
 import Education from './Education';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+	flex: 1 0 auto;
+	width: 30%;
+	background-color: rgba(118, 136, 169, 0.125);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 1.2rem 1.2rem 1.2rem;
+	color: rgb(21, 44, 85);
+`;
 
 const Sidebar = ({ data }) => (
-	<section style={style.main}>
+	<Wrapper>
 		<div>
 			<ContactLinks data={data.links} />
 			<Education
@@ -25,21 +36,8 @@ const Sidebar = ({ data }) => (
 				separator={'<br/>'}
 			/>
 		</div>
-	</section>
+	</Wrapper>
 );
-
-const style = {
-	main: {
-		flex: '1 0 auto',
-		width: '30%',
-		backgroundColor: 'rgba(118,136,169,0.125)',
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'space-between',
-		padding: '0 1.2rem 1.2rem 1.2rem',
-		color: 'rgb(21, 44, 85)'
-	}
-};
 
 Sidebar.propTypes = {
 	data: PropTypes.object.isRequired

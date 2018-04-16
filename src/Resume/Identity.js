@@ -1,36 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+	margin-bottom: 1.5rem;
+`;
+
+const Header = styled.h1`
+	display: block;
+	font-size: 1.8rem;
+`;
+
+const SubHeader = styled.h2`
+	font-size: 1.4rem;
+`;
+
+const Span = styled.span`
+	display: inline-block;
+`;
 
 const Identity = ({ firstName, lastName, program }) => {
 	const { nickname, term } = program;
 	return (
-		<section style={style.main}>
-			<h1 style={style.h1}>
-				<span style={style.span}>{firstName.toUpperCase()}</span>
-				<span style={style.span}>&nbsp;</span>
-				<span style={style.span}>{lastName.toUpperCase()}</span>
-			</h1>
-			<h2 style={style.h2}>
+		<Wrapper>
+			<Header>
+				<Span>{firstName.toUpperCase()}</Span>
+				<Span>&nbsp;</Span>
+				<Span>{lastName.toUpperCase()}</Span>
+			</Header>
+			<SubHeader>
 				{term} {nickname}
-			</h2>
-		</section>
+			</SubHeader>
+		</Wrapper>
 	);
-};
-
-const style = {
-	main: {
-		marginBottom: '1.5rem'
-	},
-	h1: {
-		display: 'block',
-		fontSize: '1.8rem'
-	},
-	h2: {
-		fontSize: '1.4rem'
-	},
-	span: {
-		display: 'inline-block'
-	}
 };
 
 Identity.propTypes = {

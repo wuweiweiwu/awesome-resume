@@ -1,18 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Section = ({ color, children }) => (
-	<section
-		style={{
-			marginTop: '-0.8rem',
-			// borderTop: '0.1px solid ' + color,
-			marginBottom: '-0.4rem',
-			padding: '0.025rem 1.2rem'
-		}}
-	>
-		{children}
-	</section>
-);
+const Wrapper = styled.section`
+	margin-top: -0.8rem;
+	margin-bottom: -0.4rem;
+	padding: 0.025rem 1.2rem;
+`;
+
+const Section = ({ color, children }) => <Wrapper>{children}</Wrapper>;
 
 Section.propTypes = {
 	color: PropTypes.string.isRequired,

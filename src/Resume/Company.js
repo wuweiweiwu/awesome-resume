@@ -41,12 +41,6 @@ const Company = ({
 	);
 };
 
-const style = {
-	children: {
-		padding: '0 2rem 0.25rem 1.25rem'
-	}
-};
-
 Company.propTypes = {
 	color: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,

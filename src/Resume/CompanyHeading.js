@@ -1,42 +1,44 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 0.75rem;
+`;
+
+const Heading = styled.div`
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: rgba(77, 100, 141, 1);
+	padding: 0.25rem;
+`;
+
+const JobTitle = styled.div`
+	display: inline-block;
+	font-size: 1rem;
+	color: rgba(78, 78, 78, 1);
+	padding: 0.25rem;
+	font-weight: 300;
+`;
+
+const Location = styled.div`
+	font-size: 0.9rem;
+	color: rgba(77, 100, 141, 0.75);
+	padding: 0.25rem;
+`;
 
 const CompanyHeading = ({ style, company, title, date, location }) => (
-	<div style={{ ...defaultStyles.main, ...style }}>
-		<div style={defaultStyles.company}>
+	<Wrapper>
+		<Heading>
 			{company}
-			<div style={defaultStyles.title}>{title}</div>
-		</div>
-		<div style={defaultStyles.locationdate}>{date + ' | ' + location}</div>
-	</div>
+			<JobTitle>{title}</JobTitle>
+		</Heading>
+		<Location>{date + ' | ' + location}</Location>
+	</Wrapper>
 );
-
-const defaultStyles = {
-	main: {
-		display: 'flex',
-		justifyContent: 'space-between',
-		alignItems: 'center',
-		paddingRight: '0.75rem'
-	},
-	company: {
-		fontSize: '1.25rem',
-		fontWeight: 'bold',
-		color: 'rgba(77, 100, 141, 1)',
-		padding: '0.25rem'
-	},
-	title: {
-		display: 'inline-block',
-		fontSize: '1rem',
-		color: 'rgba(78, 78, 78 , 1)',
-		padding: '0.25rem',
-		fontWeight: '300'
-	},
-	locationdate: {
-		fontSize: '0.9rem',
-		color: 'rgba(77, 100, 141, 0.75)',
-		padding: '0.25rem'
-	}
-};
 
 CompanyHeading.propTypes = {
 	style: PropTypes.object.isRequired,
