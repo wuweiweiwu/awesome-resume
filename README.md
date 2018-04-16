@@ -15,13 +15,23 @@ Modify the `"homepage"` attribute in `package.json` to the appropriate url.
 yarn deploy
 ```
 
-## Todo list
+## To update your info:
 
-* [x] use create-react-app
-* [x] update info
-* [x] use some sort of TOML file for organizing info
-* [ ] ~~redo sidebar~~
-* [ ] theming
+Beginner:
+
+```
+# go to src/YOUR_DATA.js
+# modify
+# deploy and show everyone
+```
+
+Advanced:
+
+```
+# go to src
+# go crazy and rewrite all the components and implement theming using context
+# YAY
+```
 
 ## Acknowledgements
 
