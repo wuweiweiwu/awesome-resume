@@ -19,8 +19,7 @@ yarn deploy
 
 * [x] use create-react-app
 * [x] update info
-* [ ] **rewrite components cuz its a miss rn**
-* [ ] use some sort of TOML file for organizing info
+* [x] use some sort of TOML file for organizing info
 * [ ] ~~redo sidebar~~
 * [ ] theming
 
