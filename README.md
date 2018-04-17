@@ -5,6 +5,8 @@ This is my 4A Resume written in React! To run, simply:
 ```
 yarn
 yarn start
+
+#press ENTER in the window to download your resume as an image (png)
 ```
 
 Deploy to Github Page:
